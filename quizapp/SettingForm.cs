@@ -27,5 +27,11 @@ namespace quizapp
             QuestionsForm questionsForm = new QuestionsForm();
             questionsForm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TotalMark totalMark = new TotalMark();
+            totalMark.Show();
+        }
     }
 }

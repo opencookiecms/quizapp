@@ -14,6 +14,7 @@ namespace quizapp
 {
     public partial class Form1 : Form
     {
+        private int counter = 60;
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +24,11 @@ namespace quizapp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            timer1= new System.Windows.Forms.Timer();
+            timer1.Tick += new EventHandler(timer1_Tick);
+            timer1.Interval = 1000;
+            countLabel.Text = counter.ToString();
+           
             timer1.Start();
             //serialPort1.Open();
 
@@ -36,8 +42,10 @@ namespace quizapp
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-          // string PORTREAD = serialPort1.ReadLine();
-            //label1.Text = PORTREAD;
+            counter--;
+            if (counter == 0)
+                timer1.Stop();
+            countLabel.Text = counter.ToString();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -63,5 +71,7 @@ namespace quizapp
             SettingForm settingform = new SettingForm();
             settingform.Show();
         }
+
+     
     }
 }

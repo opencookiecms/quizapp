@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -49,18 +48,10 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.buttSave = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.quizDataGridView = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quizDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 33);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(890, 218);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyDown);
             // 
             // textBox1
             // 
@@ -94,7 +85,7 @@
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(15, 257);
+            this.groupBox1.Location = new System.Drawing.Point(16, 293);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(890, 153);
             this.groupBox1.TabIndex = 3;
@@ -198,7 +189,7 @@
             // 
             // buttNew
             // 
-            this.buttNew.Location = new System.Drawing.Point(16, 420);
+            this.buttNew.Location = new System.Drawing.Point(16, 452);
             this.buttNew.Name = "buttNew";
             this.buttNew.Size = new System.Drawing.Size(75, 23);
             this.buttNew.TabIndex = 4;
@@ -208,7 +199,7 @@
             // 
             // buttUpdate
             // 
-            this.buttUpdate.Location = new System.Drawing.Point(97, 420);
+            this.buttUpdate.Location = new System.Drawing.Point(97, 452);
             this.buttUpdate.Name = "buttUpdate";
             this.buttUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttUpdate.TabIndex = 5;
@@ -218,7 +209,7 @@
             // 
             // buttRemove
             // 
-            this.buttRemove.Location = new System.Drawing.Point(179, 420);
+            this.buttRemove.Location = new System.Drawing.Point(179, 452);
             this.buttRemove.Name = "buttRemove";
             this.buttRemove.Size = new System.Drawing.Size(75, 23);
             this.buttRemove.TabIndex = 6;
@@ -227,7 +218,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(15, 7);
+            this.textBox5.Location = new System.Drawing.Point(16, 38);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(258, 20);
             this.textBox5.TabIndex = 7;
@@ -244,7 +235,7 @@
             // 
             // buttSave
             // 
-            this.buttSave.Location = new System.Drawing.Point(830, 420);
+            this.buttSave.Location = new System.Drawing.Point(830, 452);
             this.buttSave.Name = "buttSave";
             this.buttSave.Size = new System.Drawing.Size(75, 23);
             this.buttSave.TabIndex = 9;
@@ -252,11 +243,20 @@
             this.buttSave.UseVisualStyleBackColor = true;
             this.buttSave.Click += new System.EventHandler(this.buttSave_Click);
             // 
+            // quizDataGridView
+            // 
+            this.quizDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.quizDataGridView.Location = new System.Drawing.Point(16, 64);
+            this.quizDataGridView.Name = "quizDataGridView";
+            this.quizDataGridView.Size = new System.Drawing.Size(889, 220);
+            this.quizDataGridView.TabIndex = 10;
+            // 
             // QuestionsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 474);
+            this.ClientSize = new System.Drawing.Size(925, 519);
+            this.Controls.Add(this.quizDataGridView);
             this.Controls.Add(this.buttSave);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
@@ -264,21 +264,18 @@
             this.Controls.Add(this.buttUpdate);
             this.Controls.Add(this.buttNew);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "QuestionsForm";
             this.Text = "Questions";
             this.Load += new System.EventHandler(this.Questions_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quizDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
        
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
@@ -298,33 +295,11 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button buttSave;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn questionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn correctanswerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn typequestionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn answeroneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn answertwoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn answerthreeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn answerfourDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn markDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn playeransDataGridViewTextBoxColumn;
+  
       
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn subjectiveAnsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn objectiveAnsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn playeranswerDataGridViewTextBoxColumn;
+     
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
-     
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridView quizDataGridView;
     }
 }

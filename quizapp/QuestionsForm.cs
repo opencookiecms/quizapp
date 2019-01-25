@@ -19,7 +19,9 @@ namespace quizapp
 
         private void Questions_Load(object sender, EventArgs e)
         {
-            
+            // TODO: This line of code loads data into the 'quizApp.Quiz' table. You can move, or remove it, as needed.
+    
+
 
         }
 
@@ -71,6 +73,6 @@ namespace quizapp
             textBox1.Focus();
         }
 
-      
+    
     }
 }

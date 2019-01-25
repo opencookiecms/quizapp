@@ -16,5 +16,10 @@ namespace quizapp
         {
             InitializeComponent();
         }
+
+        private void TotalMark_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

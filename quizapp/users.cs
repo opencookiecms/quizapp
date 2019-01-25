@@ -16,5 +16,20 @@ namespace quizapp
         {
             InitializeComponent();
         }
+
+        private void usersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.usersBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.quizApp);
+
+        }
+
+        private void Users_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quizApp.Users' table. You can move, or remove it, as needed.
+            this.usersTableAdapter.Fill(this.quizApp.Users);
+
+        }
     }
 }

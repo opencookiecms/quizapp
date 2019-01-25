@@ -48,11 +48,11 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(470, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 37);
+            this.label1.Size = new System.Drawing.Size(246, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Player Names";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -71,11 +71,11 @@
             this.buttSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttSetting.BackColor = System.Drawing.Color.Orange;
             this.buttSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttSetting.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttSetting.Font = new System.Drawing.Font("Nightclub BTN", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttSetting.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttSetting.Location = new System.Drawing.Point(1128, 613);
+            this.buttSetting.Location = new System.Drawing.Point(1094, 613);
             this.buttSetting.Name = "buttSetting";
-            this.buttSetting.Size = new System.Drawing.Size(112, 44);
+            this.buttSetting.Size = new System.Drawing.Size(146, 44);
             this.buttSetting.TabIndex = 1;
             this.buttSetting.Text = "Setting";
             this.buttSetting.UseVisualStyleBackColor = false;
@@ -97,11 +97,11 @@
             this.countLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.countLabel.AutoSize = true;
             this.countLabel.BackColor = System.Drawing.Color.Transparent;
-            this.countLabel.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countLabel.Font = new System.Drawing.Font("Segoe UI Emoji", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.countLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.countLabel.Location = new System.Drawing.Point(1087, 69);
+            this.countLabel.Location = new System.Drawing.Point(1073, 48);
             this.countLabel.Name = "countLabel";
-            this.countLabel.Size = new System.Drawing.Size(153, 65);
+            this.countLabel.Size = new System.Drawing.Size(192, 85);
             this.countLabel.TabIndex = 3;
             this.countLabel.Text = "00:30";
             // 
@@ -112,11 +112,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.QuestionLabel.AutoSize = true;
             this.QuestionLabel.BackColor = System.Drawing.Color.Transparent;
-            this.QuestionLabel.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuestionLabel.Font = new System.Drawing.Font("Adobe Gothic Std B", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QuestionLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.QuestionLabel.Location = new System.Drawing.Point(212, 221);
+            this.QuestionLabel.Location = new System.Drawing.Point(211, 201);
             this.QuestionLabel.Name = "QuestionLabel";
-            this.QuestionLabel.Size = new System.Drawing.Size(832, 50);
+            this.QuestionLabel.Size = new System.Drawing.Size(805, 47);
             this.QuestionLabel.TabIndex = 4;
             this.QuestionLabel.Text = "Dimanakah Terletaknya Kekuatan Hang Tuah ?\r\n";
             // 
@@ -143,11 +143,11 @@
             this.nextBut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.nextBut.BackColor = System.Drawing.Color.SeaGreen;
             this.nextBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.nextBut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextBut.Font = new System.Drawing.Font("Nightclub BTN", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextBut.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.nextBut.Location = new System.Drawing.Point(1128, 486);
             this.nextBut.Name = "nextBut";
-            this.nextBut.Size = new System.Drawing.Size(112, 33);
+            this.nextBut.Size = new System.Drawing.Size(112, 49);
             this.nextBut.TabIndex = 6;
             this.nextBut.Text = "Next";
             this.nextBut.UseVisualStyleBackColor = false;
