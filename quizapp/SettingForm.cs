@@ -33,5 +33,17 @@ namespace quizapp
             TotalMark totalMark = new TotalMark();
             totalMark.Show();
         }
+
+        private void SettingForm_Paint(object sender, PaintEventArgs e)
+        {
+            SettingForm settingForm = new SettingForm();
+
+            System.Drawing.Graphics graphics = e.Graphics;
+
+            System.Drawing.Rectangle gradient_rectangle = new System.Drawing.Rectangle(0, 0, settingForm.Width, settingForm.Height);
+            System.Drawing.Brush b = new System.Drawing.Drawing2D.LinearGradientBrush(gradient_rectangle, System.Drawing.Color.FromArgb(190, 147, 197), System.Drawing.Color.FromArgb(123, 198, 204), 65f);
+
+            graphics.FillRectangle(b, gradient_rectangle);
+        }
     }
 }

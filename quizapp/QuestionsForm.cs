@@ -20,7 +20,9 @@ namespace quizapp
         private void Questions_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quizApp.Quiz' table. You can move, or remove it, as needed.
-    
+            this.quizTableAdapter.Fill(this.quizApp.Quiz);
+            // TODO: This line of code loads data into the 'quizApp.Quiz' table. You can move, or remove it, as needed.
+
 
 
         }
@@ -29,9 +31,11 @@ namespace quizapp
         {
             try
             {
+                this.Validate();
+                this.quizBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.quizApp);
 
-           
-         
+
             }
             catch(Exception ex)
             {
@@ -73,6 +77,14 @@ namespace quizapp
             textBox1.Focus();
         }
 
-    
+        private void quizBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.quizBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.quizApp);
+
+        }
+
+      
     }
 }

@@ -93,30 +93,42 @@
             // 
             // buttMin
             // 
-            this.buttMin.Location = new System.Drawing.Point(775, 12);
+            this.buttMin.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttMin.Font = new System.Drawing.Font("Nightclub BTN", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttMin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttMin.Location = new System.Drawing.Point(769, 12);
             this.buttMin.Name = "buttMin";
-            this.buttMin.Size = new System.Drawing.Size(75, 23);
+            this.buttMin.Size = new System.Drawing.Size(79, 38);
             this.buttMin.TabIndex = 4;
-            this.buttMin.Text = "button3";
-            this.buttMin.UseVisualStyleBackColor = true;
+            this.buttMin.Text = "-";
+            this.buttMin.UseVisualStyleBackColor = false;
             // 
             // buttMax
             // 
-            this.buttMax.Location = new System.Drawing.Point(856, 12);
+            this.buttMax.BackColor = System.Drawing.Color.Gold;
+            this.buttMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttMax.Font = new System.Drawing.Font("Nightclub BTN", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttMax.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttMax.Location = new System.Drawing.Point(849, 12);
             this.buttMax.Name = "buttMax";
-            this.buttMax.Size = new System.Drawing.Size(75, 23);
+            this.buttMax.Size = new System.Drawing.Size(75, 38);
             this.buttMax.TabIndex = 4;
-            this.buttMax.Text = "button3";
-            this.buttMax.UseVisualStyleBackColor = true;
+            this.buttMax.Text = "[]";
+            this.buttMax.UseVisualStyleBackColor = false;
             // 
             // buttClose
             // 
-            this.buttClose.Location = new System.Drawing.Point(937, 12);
+            this.buttClose.BackColor = System.Drawing.Color.Crimson;
+            this.buttClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttClose.Font = new System.Drawing.Font("Nightclub BTN", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttClose.Location = new System.Drawing.Point(924, 12);
             this.buttClose.Name = "buttClose";
-            this.buttClose.Size = new System.Drawing.Size(75, 23);
+            this.buttClose.Size = new System.Drawing.Size(75, 38);
             this.buttClose.TabIndex = 4;
-            this.buttClose.Text = "button3";
-            this.buttClose.UseVisualStyleBackColor = true;
+            this.buttClose.Text = "X";
+            this.buttClose.UseVisualStyleBackColor = false;
             // 
             // SettingForm
             // 
@@ -135,6 +147,7 @@
             this.Name = "SettingForm";
             this.Text = "Setting";
             this.Load += new System.EventHandler(this.Setting_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.SettingForm_Paint);
             this.ResumeLayout(false);
 
         }

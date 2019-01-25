@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.playeronelabel = new System.Windows.Forms.Label();
             this.playeronemarklabel = new System.Windows.Forms.Label();
+            this.playeronelabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,17 +60,6 @@
             this.panel1.Size = new System.Drawing.Size(305, 272);
             this.panel1.TabIndex = 0;
             // 
-            // playeronelabel
-            // 
-            this.playeronelabel.AutoSize = true;
-            this.playeronelabel.Font = new System.Drawing.Font("Nightclub BTN", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playeronelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playeronelabel.Location = new System.Drawing.Point(60, 54);
-            this.playeronelabel.Name = "playeronelabel";
-            this.playeronelabel.Size = new System.Drawing.Size(186, 52);
-            this.playeronelabel.TabIndex = 0;
-            this.playeronelabel.Text = "Player 1";
-            // 
             // playeronemarklabel
             // 
             this.playeronemarklabel.AutoSize = true;
@@ -81,6 +70,17 @@
             this.playeronemarklabel.Size = new System.Drawing.Size(140, 73);
             this.playeronemarklabel.TabIndex = 1;
             this.playeronemarklabel.Text = "000";
+            // 
+            // playeronelabel
+            // 
+            this.playeronelabel.AutoSize = true;
+            this.playeronelabel.Font = new System.Drawing.Font("Nightclub BTN", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playeronelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.playeronelabel.Location = new System.Drawing.Point(60, 54);
+            this.playeronelabel.Name = "playeronelabel";
+            this.playeronelabel.Size = new System.Drawing.Size(186, 52);
+            this.playeronelabel.TabIndex = 0;
+            this.playeronelabel.Text = "Player 1";
             // 
             // panel2
             // 
@@ -223,6 +223,7 @@
             this.Name = "TotalMark";
             this.Text = "TotalMark";
             this.Load += new System.EventHandler(this.TotalMark_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.TotalMark_Paint);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
