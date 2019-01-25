@@ -28,17 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quiztableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quizDataDataSet = new quizapp.QuizDataDataSet();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -59,87 +49,21 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.buttSave = new System.Windows.Forms.Button();
-            this.quiztableTableAdapter = new quizapp.QuizDataDataSetTableAdapters.quiztableTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quiztableBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quizDataDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
-            this.dataGridView1.DataSource = this.quiztableBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(16, 33);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(890, 218);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyDown);
             // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ID";
-            this.dataGridViewTextBoxColumn5.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "question";
-            this.dataGridViewTextBoxColumn6.HeaderText = "question";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "typequestion";
-            this.dataGridViewTextBoxColumn7.HeaderText = "typequestion";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "subjectiveAns";
-            this.dataGridViewTextBoxColumn8.HeaderText = "subjectiveAns";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "objectiveAns";
-            this.dataGridViewTextBoxColumn9.HeaderText = "objectiveAns";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "mark";
-            this.dataGridViewTextBoxColumn10.HeaderText = "mark";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "playeranswer";
-            this.dataGridViewTextBoxColumn11.HeaderText = "playeranswer";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // quiztableBindingSource
-            // 
-            this.quiztableBindingSource.DataMember = "quiztable";
-            this.quiztableBindingSource.DataSource = this.quizDataDataSet;
-            // 
-            // quizDataDataSet
-            // 
-            this.quizDataDataSet.DataSetName = "QuizDataDataSet";
-            this.quizDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // textBox1
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiztableBindingSource, "question", true));
             this.textBox1.Location = new System.Drawing.Point(61, 37);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -179,7 +103,6 @@
             // 
             // textBox4
             // 
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiztableBindingSource, "playeranswer", true));
             this.textBox4.Location = new System.Drawing.Point(486, 127);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -205,7 +128,6 @@
             // 
             // textBox6
             // 
-            this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiztableBindingSource, "subjectiveAns", true));
             this.textBox6.Location = new System.Drawing.Point(486, 34);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
@@ -214,7 +136,6 @@
             // 
             // textBox3
             // 
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiztableBindingSource, "objectiveAns", true));
             this.textBox3.Location = new System.Drawing.Point(486, 78);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -241,7 +162,6 @@
             // 
             // textBox2
             // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiztableBindingSource, "mark", true));
             this.textBox2.Location = new System.Drawing.Point(61, 109);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(121, 20);
@@ -267,7 +187,6 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiztableBindingSource, "typequestion", true));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Objective",
@@ -333,10 +252,6 @@
             this.buttSave.UseVisualStyleBackColor = true;
             this.buttSave.Click += new System.EventHandler(this.buttSave_Click);
             // 
-            // quiztableTableAdapter
-            // 
-            this.quiztableTableAdapter.ClearBeforeFill = true;
-            // 
             // QuestionsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -354,8 +269,6 @@
             this.Text = "Questions";
             this.Load += new System.EventHandler(this.Questions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quiztableBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quizDataDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -405,9 +318,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn playeranswerDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
-        private QuizDataDataSet quizDataDataSet;
-        private System.Windows.Forms.BindingSource quiztableBindingSource;
-        private QuizDataDataSetTableAdapters.quiztableTableAdapter quiztableTableAdapter;
+     
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
