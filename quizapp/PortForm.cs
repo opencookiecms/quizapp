@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace quizapp
 {
-    public partial class Setting : Form
+    public partial class PortForm : Form
     {
-        public Setting()
+        public PortForm()
         {
             InitializeComponent();
-        }
-
-        private void Setting_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

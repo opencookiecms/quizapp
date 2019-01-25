@@ -59,7 +59,7 @@
             // 
             // serialPort1
             // 
-            this.serialPort1.PortName = "COM5";
+            this.serialPort1.PortName = "COM7";
             this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
             // 
             // timer1
@@ -79,6 +79,7 @@
             this.buttSetting.TabIndex = 1;
             this.buttSetting.Text = "Setting";
             this.buttSetting.UseVisualStyleBackColor = false;
+            this.buttSetting.Click += new System.EventHandler(this.buttSetting_Click);
             // 
             // panel1
             // 
@@ -115,7 +116,7 @@
             this.QuestionLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.QuestionLabel.Location = new System.Drawing.Point(212, 221);
             this.QuestionLabel.Name = "QuestionLabel";
-            this.QuestionLabel.Size = new System.Drawing.Size(826, 50);
+            this.QuestionLabel.Size = new System.Drawing.Size(832, 50);
             this.QuestionLabel.TabIndex = 4;
             this.QuestionLabel.Text = "Dimanakah Terletaknya Kekuatan Hang Tuah ?\r\n";
             // 
@@ -197,7 +198,7 @@
             this.Controls.Add(this.buttSetting);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "vb";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.panel1.ResumeLayout(false);

@@ -17,32 +17,26 @@ namespace quizapp
         public Form1()
         {
             InitializeComponent();
-           
-            try
-            {
-               // serialPort1.Open();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+          
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();
-          
+            //serialPort1.Open();
+
 
         }
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-           
+          
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-           // string PORTREAD = serialPort1.ReadLine();
+          // string PORTREAD = serialPort1.ReadLine();
             //label1.Text = PORTREAD;
         }
 
@@ -62,6 +56,12 @@ namespace quizapp
             System.Drawing.Brush c = new System.Drawing.Drawing2D.LinearGradientBrush(gradient_rectangle, System.Drawing.Color.FromArgb(255, 0, 0), System.Drawing.Color.FromArgb(57, 128, 227), 65f);
             graphics.FillRectangle(b, gradient_rectangle);
             graphics.FillRectangle(c, gradient_rectangl);
+        }
+
+        private void buttSetting_Click(object sender, EventArgs e)
+        {
+            SettingForm settingform = new SettingForm();
+            settingform.Show();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace quizapp
 {
-    partial class Setting
+    partial class SettingForm
     {
         /// <summary>
         /// Required designer variable.
@@ -51,6 +51,7 @@
             this.RegBut.TabIndex = 1;
             this.RegBut.Text = "Questionare ";
             this.RegBut.UseVisualStyleBackColor = true;
+            this.RegBut.Click += new System.EventHandler(this.RegBut_Click);
             // 
             // button1
             // 
@@ -70,7 +71,7 @@
             this.button2.Text = "Winner";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // Setting
+            // SettingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,7 +80,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.RegBut);
             this.Controls.Add(this.userBut);
-            this.Name = "Setting";
+            this.Name = "SettingForm";
             this.Text = "Setting";
             this.Load += new System.EventHandler(this.Setting_Load);
             this.ResumeLayout(false);
