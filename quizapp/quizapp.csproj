@@ -171,7 +171,6 @@
     <None Include="QuizApp.xss">
       <DependentUpon>QuizApp.xsd</DependentUpon>
     </None>
-    <None Include="quizapp_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
